@@ -1,0 +1,36 @@
+Nama		: Heri aditia
+NIM		: 1515015130
+Kelas		: C2 / Kecerdasan Buatan
+
+1.
+	orang(dian). 		 //dian adalah nama orang
+	mobil(atoz). 		 //atoz adalah nama mobil atau merk mobilnya atoz
+	suka(dian,atoz).	 //dian adalah  nama orang kemudian atoz adalah nama mobil, dapat dikatakan 
+				   Dian menyukai mobil bermerk atoz.
+	dijual(atoz).		 // mobil bermerk atoz dijual
+	dapat_membeli(X,Y):-     // untuk memenuhi kondisi dapat_membeli
+	orang(X),    		 //  diperlukan X dan Y. dimana X sendiri adalah
+	mobil(Y),    		    orang yang ingin membeli mobil, kemudian
+	suka(X,Y),    		    mobil tersebut adalah sesuai dengan yang di
+	dijual(Y). 		    suka oleh si X(orang) dan kemudian ada dijual.
+	suka(_,Apa).		  // _ adalah X dibaca(orang) Apa dibaca(Y).
+				     menampilkan orang yang dibaca(X) kemudian
+				     menampilkan apa yang disuka oleh orang(X)
+				     yang sesuai dengan suka(Y), jadi suka(_,Apa)
+				     atau suka(X,Y).
+
+2.
+ 	hoby(ricky,catur).
+	sifat(embang,pemalas).
+	makanan(yusida,vegetarian).
+	pandai(kusdiar,gitar)
+	mobil(sadek,merah).   
+	mobil(merah,sadek).
+	mobil(sadek,bmw).
+	orang(awan,piano).
+	orang(awan,pontianak).
+	orang(pontianak,jawa).	 	
+	baik(orang,sifat)if(penyayang,dermawan)
+	pintar(orang,nilaitinggi) if pintar(matematika,nilaitinggi);pintar(ipa,nilaitinggi);
+	pintar(ips,nilaitinggi).
+	setiap(orang,mati).
